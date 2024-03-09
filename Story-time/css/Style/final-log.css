@@ -71,41 +71,32 @@ button {
 }
 
 button:hover {
-    /* لون الخلفية أزرق أغمق عند التحويم */
     background-color: #0069d9;
 }
 
 a {
-    /* إزالة زخرفة الارتباط */
     text-decoration: none;
-    /* لون النص أزرق غامق */
     color: #007bff;
 }
 
 a:hover {
-    /* لون النص أزرق أغمق عند التحويم */
     color: #0069d9;
 }
 
 .social-login {
-    /* محاذاة النص بالوسط */
     text-align: center;
-    /* هامش 20 بكسل فوق قسم تسجيل الدخول باستخدام مواقع التواصل */
     margin-top: 20px;
 }
 
 .social-login p {
-    /* هامش 10 بكسل أسفل النص */
     margin-bottom: 10px;
 }
 
 .social-login a {
-    /* هامش 5 بكسل بين كل رابط */
     margin: 0 5px;
 }
 
 .social-login img {
-    /* عرض وارتفاع الصور */
     width: 30px;
     height: 30px;
 }

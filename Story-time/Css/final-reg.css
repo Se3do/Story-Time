@@ -1,0 +1,106 @@
+body {
+
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 400px;
+    margin: 81px auto;
+    border: 1px solid #ddd;
+    padding: 24px;
+    border-radius: 28px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.input-field {
+    margin-bottom: 10px;
+
+}
+
+.input-field label {
+    display: block;
+    margin-bottom: 5px;
+
+}
+
+.input-field input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 13px;
+    text-align: center;
+}
+
+.checkbox {
+    margin-top: 10px;
+}
+
+.checkbox input {
+    margin-right: 5px;
+}
+
+.checkbox label {
+    display: inline-block;
+}
+
+button {
+    width: 41%;
+    padding: 9px;
+    padding-top: 9px;
+    padding-right: 9px;
+    padding-bottom: 9px;
+    padding-left: 9px;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0069d9;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    color: #0069d9;
+}
+
+.social-login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-login p {
+    margin-bottom: 10px;
+}
+
+.social-login a {
+    margin: 0 5px;
+}
+
+.social-login img {
+    width: 30px;
+    height: 30px;
+}
+
+#form {
+    text-align: center;
+}

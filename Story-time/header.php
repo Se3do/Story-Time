@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
   <title>Home</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href = "/Css/index.css">
+  <link rel="stylesheet" href = "Css/index.css">
 </head>
 
 <body>

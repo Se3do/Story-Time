@@ -1,0 +1,105 @@
+main h1{
+  text-align: center;
+  margin-top: 60px;
+  font-size: 3rem;
+}
+
+.about-us{
+  padding: 0 100px;
+}
+
+.about-us p{
+  margin-top: 30px;
+  font-size: large;
+  color:#181818e1;
+}
+
+.person{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.person img{
+  width: 250px;
+  padding-bottom: 15px;
+  border-top-right-radius: 25px;
+}
+
+.mr2{
+  margin-right: 5px;
+}
+
+.o-30{
+  opacity: 0.5;
+}
+
+.cards-container{
+  display: flex;
+  height: 600px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 100px;
+}
+
+.btn-container{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 200px;
+}
+
+.Btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  /* overflow: hidden; */
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all .3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BG {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #181818;
+  z-index: -1;
+  border-radius: 10px;
+  pointer-events: none;
+  transition: all .3s;
+}
+
+.Btn:hover .BG {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.Btn:hover .svgContainer {
+  background-color: rgba(156, 156, 156, 0.466);
+  backdrop-filter: blur(4px);
+}
+

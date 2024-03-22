@@ -53,14 +53,14 @@
           Books
         </button>
       </a>
-      <a href="#Manga">
-      <button class="value">
-        Manga
-      </button>
-      </a>
       <a href="#Novels">
       <button class="value">
         Novels
+      </button>
+      </a>
+      <a href="#Manga">
+      <button class="value">
+        Manga
       </button>
       </a>
       <a href="#Fiction">

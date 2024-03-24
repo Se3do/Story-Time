@@ -37,6 +37,7 @@
 
           <li><a href="">Logout</a><span class="icon"><i class="fa fa-envelope"></i></span></li>
         </ul>
+
       </div>
 
     </nav>
@@ -45,18 +46,28 @@
 
   <div class="new-wrapper">
 
-    <div id="main">
+    <div id="main" style="padding-top: 20px;" >
 
       <div id="main-contents">
         <div>
-          <h2 id="title">Story Time Admins</h2>
+          <h2 id="title">Edit Book</h2>
           <hr>
-          <div class="admin-name">
-            <h3>admin1</h3>
-            <button class="button">
-              <svg viewBox="0 0 448 512" class="svgIcon"><path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"></path></svg>
-            </button>
-          </div>
+          <form action="" class="add-admin-form" style="margin-top: 15px;">
+            <input placeholder="Book Title" type="text" name="Book Title" class="input">
+            <input placeholder="Book Description" type="text" name="Book Description" class="input">
+            <input placeholder="Book Genres" type="text" name="Book Genres" class="input">
+            <input placeholder="Book Price" type="number" name="Book Price" class="input" >
+            <input placeholder="Book Image" type="file" name="Book Image" class="input" accept="image/*">
+            <label for="type">Book Type:</label>
+            <select name="Book Type" class="input" style="height: 50px;">
+              <option value="Novel">Novel</option>
+              <option value="Book">Book</option>
+              <option value="Manga">Manga</option>
+            </select>
+
+
+            <button class = "add-admin"> Submit! </button>
+          </form>
         </div>
       </div>
 

@@ -7,6 +7,7 @@ $db="story time";
 
 $con=mysqli_connect($host,$user,$pass,$db);
 $con->set_charset("utf8");
-  
+
+$user_id = 1;
 
 ?>

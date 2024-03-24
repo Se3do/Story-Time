@@ -177,7 +177,7 @@ input:not(:placeholder-shown)~.reset {
   font-size: 1.5rem;
 }
 
-#cart {
+#shopping-cart {
   margin-left: 10px;
   width: 50px;
 }
@@ -392,7 +392,6 @@ section hr {
 }
 
 .book {
-  cursor: pointer;
   margin: 0 20px;
   width: 152px;
 }

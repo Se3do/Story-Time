@@ -9,6 +9,9 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="Css/index.css">
   <link rel="stylesheet" href="Css/about-us.css">
+  <link rel="stylesheet" href="Css/login.css">
+  <link rel="stylesheet" href="Css/book-details.css">
+
 </head>
 
 <body>
@@ -22,13 +25,13 @@
         </button>
         </a>
         <div class="search">
-          <form class="form">
+          <form class="form" action="book-details.php" method="post">
             <button>
               <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
                 <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
               </svg>
             </button>
-            <input class="input" placeholder="Search" type="text">
+            <input class="input" placeholder="Search" type="text" name="name">
             <button class="reset" type="reset">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
@@ -38,8 +41,8 @@
         </div>
       </div>
       <div id="login-cart">
-        <a href="" id="login">Login</a>
-        <a href="" id="cart-link"><img id="cart" src="images/shopping-cart-white.png" alt="Cart"></a>
+      <a href="final lo.php" id="login">Login</a>
+        <a href="cart.php" id="cart-link"><img id="shopping-cart" src="images/shopping-cart-white.png" alt="Cart"></a>
       </div>
     </div>
     <nav>
@@ -50,7 +53,7 @@
       </a>
       <a href="#Trending">
         <button class="value">
-          Books
+          Trending
         </button>
       </a>
       <a href="#Novels">

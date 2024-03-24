@@ -22,7 +22,9 @@
           while ($row = mysqli_fetch_array($sql)) {
         ?>
             <div class="book">
-              <img class="book-img" src="<?php echo  $row['Book_img']; ?>">
+              <a href="book-details.php?Book_id=<?php echo  $row['Book_id'];?>">
+                <img class="book-img" src="<?php echo  $row['Book_img']; ?>">
+              </a>
             </div>
         <?php }
         } ?>
@@ -47,7 +49,9 @@
           while ($row = mysqli_fetch_array($sql)) {
         ?>
             <div class="book">
-              <img class="book-img" src="<?php echo  $row['Book_img']; ?>">
+              <a href="book-details.php?Book_id=<?php echo  $row['Book_id'];?>">
+                <img class="book-img" src="<?php echo  $row['Book_img']; ?>">
+              </a>
             </div>
         <?php }
         } ?>
@@ -72,7 +76,9 @@
           while ($row = mysqli_fetch_array($sql)) {
         ?>
             <div class="book">
-              <img class="book-img" src="<?php echo  $row['Book_img']; ?>">
+              <a href="book-details.php?Book_id=<?php echo  $row['Book_id'];?>">
+                <img class="book-img" src="<?php echo  $row['Book_img']; ?>">
+              </a>
             </div>
         <?php }
         } ?>
@@ -97,7 +103,9 @@
           while ($row = mysqli_fetch_array($sql)) {
         ?>
             <div class="book">
-              <img class="book-img" src="<?php echo  $row['Book_img']; ?>">
+              <a href="book-details.php?Book_id=<?php echo  $row['Book_id'];?>">
+                <img class="book-img" src="<?php echo  $row['Book_img']; ?>">
+              </a>
             </div>
         <?php }
         } ?>
@@ -122,7 +130,9 @@
           while ($row = mysqli_fetch_array($sql)) {
         ?>
             <div class="book">
-              <img class="book-img" src="<?php echo  $row['Book_img']; ?>">
+              <a href="book-details.php?Book_id=<?php echo  $row['Book_id'];?>">
+                <img class="book-img" src="<?php echo  $row['Book_img']; ?>">
+              </a>
             </div>
         <?php }
         } ?>
@@ -147,7 +157,9 @@
           while ($row = mysqli_fetch_array($sql)) {
         ?>
             <div class="book">
-              <img class="book-img" src="<?php echo  $row['Book_img']; ?>">
+              <a href="book-details.php?Book_id=<?php echo  $row['Book_id'];?>">
+                <img class="book-img" src="<?php echo  $row['Book_img']; ?>">
+              </a>
             </div>
         <?php }
         } ?>

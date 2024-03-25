@@ -18,10 +18,10 @@
         <div class="link-drawer">
           <span>ABOUT US</span>
           <ul class="links">
-            <li><a href="">About Story Time</a></li>
-            <li><a href="">Careers at Story Time</a></li>
-            <li><a href="">Story Time ,Inc.</a></li>
-            <li><a href="">Story Time Kitchen</a></li>
+            <li><a href="about-us.php">About Story Time</a></li>
+            <li><a href="about-us.php">Careers at Story Time</a></li>
+            <li><a href="about-us.php">Story Time ,Inc.</a></li>
+            <li><a href="about-us.php">Story Time Kitchen</a></li>
           </ul>
         </div>
         <div class="link-drawer">
@@ -116,6 +116,7 @@
       </p>
     </div>
   </footer>
+  <script src="Js/index.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+  <title>Home</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/Css/admin.css">
+  <link rel="stylesheet" href="/Css/admin-books.css">
+</head>
+
+<body>
+  <div class="primary-nav">
+
+    <button href="#" class="hamburger open-panel nav-toggle">
+      <span class="screen-reader-text">Menu</span>
+    </button>
+
+    <nav role="navigation" class="menu">
+
+      <a href="#" class="logotype">Story<span>Time</span></a>
+
+      <div class="overflow-container">
+
+        <ul class="menu-dropdown">
+          <br>
+          <li><a href="admins.html">Admins</a><span class="icon"><i class="fa fa-dashboard"></i></span></li>
+
+          <li><a href="add-admin.html">Add new Admin</a><span class="icon"><i class="fa fa-envelope"></i></span></li>
+
+          <li><a href="admin-Book-list.html">Books List</a><span class="icon"><i class="fa fa-dashboard"></i></span></li>
+          
+          <li><a href="add-book.html">Add Books</a><span class="icon"><i class="fa fa-dashboard"></i></span></li>
+
+          <li><a href="users.html">Users</a><span class="icon"><i class="fa fa-heart"></i></span></li>
+
+          <li><a href="">Logout</a><span class="icon"><i class="fa fa-envelope"></i></span></li>
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </div>
+
+  <div class="new-wrapper">
+
+    <div id="main">
+
+      <div id="main-contents">
+        <div>
+          <h2 id="title">Books List</h2>
+        </div>
+        <div>
+          <hr>
+          <div id="book-id">
+            <div><img id="book-img-id" src="../images/books/Crooked Kingdom.jpg"></div>
+            <div id="book-info">
+              <h3 id="book-name">Crooked Kingdom</h3>
+              <div id="price-buy">
+                <h4>Price: 10.99$</h4>
+              </div>
+              <div id="edit-delete">
+                <button>edit</button>
+                <button>delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <script src="/Js/admin.js"></script>
+</body>

@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,9 +41,11 @@
         </div>
       </div>
       <div id="login-cart">
-      <?php 
+      <a href="admin/admin-login.php" id="login">Admin</a>
+      <?php
+      session_start();
       if(isset($_SESSION['Customer_Mail'])){
-        
+        echo '<a href="" id="login" >Logout</a>';
       }else{
         echo '<a href="final lo.php" id="login">Login</a>';
       }

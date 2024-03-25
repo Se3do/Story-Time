@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,7 +37,14 @@
 
           <li><a href="users.php">Users</a><span class="icon"><i class="fa fa-heart"></i></span></li>
 
-          <li><a href="">Logout</a><span class="icon"><i class="fa fa-envelope"></i></span></li>
+          <li><a href="admin-login.php" onclick="logout()">Logout</a><span class="icon"><i class="fa fa-envelope"></i></span></li>
+          <script>
+            function logout() {
+              <?php unset($_SESSION['Admin_Username']) ?>
+              alert("Logged out successfully");
+            }
+          </script>
+
         </ul>
 
       </div>
@@ -71,7 +79,7 @@
                   </div>
                   <form action="" method="post" id="edit-delete">
                     <a href="update-book.php?Book_id=<?php echo  $row['Book_id']; ?>" class="button1">edit</a>
-                    <input type="submit" name="action" value="delete" class="button1"></input>
+                    <input type="submit" name="action" value="delete" class="button1">
                     <input type="hidden" name="id" value="<?php echo $row['Book_id']; ?>" />
                   </form>
                 </div>

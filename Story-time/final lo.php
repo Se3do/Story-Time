@@ -1,5 +1,3 @@
-<?php session_start(); ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,7 +32,7 @@
         <label class="input_label" for="password">Password</label>
         <input placeholder="Enter Your Password" name="password" type="password" class="input_field" id="password" required>
         <br>
-        <input title="Register" type="submit" class="sign-in_btn" value="Login"><span></span></input>
+        <input name="submit" title="Register" type="submit" class="sign-in_btn" value="Login"><span></span></input>
       </div>
 
       <br> <br>
@@ -46,7 +44,7 @@
 
   <?php
 
-  if (isset($_POST['submit'])) {
+  if (isset($_POST['submit']) and $_POST['submit'] == 'Login') {
 
     include 'connection.php';
     $User_Mail = $_POST['email'];
@@ -54,20 +52,25 @@
 
     #$query="SELECT * FROM `user` WHERE `User_Username`='$User_Username' and `User_Password`='$User_Password'; 
 
-    $q1 = "SELECT * FROM `customers` WHERE `Customer_Mail` ='$User_Mail' and `Customer_Password`='$User_Password'";
+    $query = "SELECT * FROM `customers` WHERE `Customer_Mail` ='$User_Mail' and `Customer_Password`='$User_Password'";
     $sql = mysqli_query($con, $query);
 
     if ($sql->num_rows > 0) {
-      
-
   ?>
+      <script>
+        alert("Logged in successfully");
+        <?php
+        session_start();
+        $_SESSION['Customer_Mail'] = $User_Mail; ?>
+        window.location.href = 'index.php';
+      </script>
     <?php
 
     } else {
     ?>
 
-      <script type="text/javascript">
-        alert("the username and password not found try agin");
+      <script>
+        alert("Incorrect Username or Password !");
       </script>
 
   <?php
@@ -75,54 +78,6 @@
   }
   ?>
 
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const form = document.querySelector('.form_container');
-
-      form.addEventListener('submit', function(event) {
-        event.preventDefault();
-
-        const email = document.querySelector('input[name="email"]').value.trim();
-        const password = document.querySelector('input[name="password"]').value.trim();
-        const errorContainer = document.querySelector('.error_container');
-        let errorMessage = '';
-
-        if (email === '' || password === '') {
-          errorMessage = 'Please fill in all fields.';
-          errorContainer.textContent = errorMessage;
-          return;
-        }
-
-        // Submit the form via AJAX
-        fetch(form.action, {
-            method: form.method,
-            body: new FormData(form)
-          })
-          .then(response => {
-            if (!response.ok) {
-              throw new Error('Failed to login.');
-            } else {
-              return response.text(); // Get response body as text
-            }
-          })
-          .then(data => {
-            // Check if response data contains an error message
-            if (data.startsWith('Error:')) {
-              errorContainer.textContent = data.substr(7); // Remove 'Error:' prefix
-            } else {
-              // Optionally, you can redirect the user to another page after successful login
-              <?php $_SESSION['Customer_Mail'] = $_POST['email']; ?>
-              alert("Logged in successfully");
-              window.location.href = 'index.php';
-            }
-          })
-          .catch(error => {
-            errorContainer.textContent = error.message;
-          });
-      });
-    });
-  </script>
 </body>
 
 </html>

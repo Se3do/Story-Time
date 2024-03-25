@@ -41,14 +41,13 @@
         <div class="link-drawer">
           <span>Shop by category</span>
           <ul class="links">
-            <li><a href="">Featured</a></li>
-            <li><a href="">Trending</a></li>
-            <li><a href="">Books</a></li>
-            <li><a href="">Manga</a></li>
-            <li><a href="">Novels</a></li>
-            <li><a href="">Fiction</a></li>
-            <li><a href="">Nonfiction</a></li>
-            <li><a href="">Kids</a></li>
+            <li><a href="#Featured">Featured</a></li>
+            <li><a href="#Trending">Trending</a></li>
+            <li><a href="#Novels">Novels</a></li>
+            <li><a href="#Manga">Manga</a></li>
+            <li><a href="#Fiction">Fiction</a></li>
+            <li><a href="#Nonfiction">Nonfiction</a></li>
+            <li><a href="#Kids">Kids</a></li>
           </ul>
         </div>
       </div>

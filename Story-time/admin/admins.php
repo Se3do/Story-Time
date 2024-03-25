@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,7 +36,8 @@
 
           <li><a href="users.php">Users</a><span class="icon"><i class="fa fa-heart"></i></span></li>
 
-          <li><a href="">Logout</a><span class="icon"><i class="fa fa-envelope"></i></span></li>
+          <li onclick="logout()"><a href="admin-login.php">Logout</a><span class="icon"><i class="fa fa-envelope"></i></span></li>
+
         </ul>
       </div>
 
@@ -97,4 +99,10 @@
     }
   }
   ?>
+  <script>
+    function logout() {
+      <?php unset($_SESSION['Admin_Username']) ?>
+      alert("Logged out successfully");
+    }
+  </script>
 </body>

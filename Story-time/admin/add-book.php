@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,7 +36,14 @@
 
           <li><a href="users.php">Users</a><span class="icon"><i class="fa fa-heart"></i></span></li>
 
-          <li><a href="">Logout</a><span class="icon"><i class="fa fa-envelope"></i></span></li>
+          <li><a href="admin-login.php" onclick="logout()">Logout</a><span class="icon"><i class="fa fa-envelope"></i></span></li>
+          <script>
+            function logout() {
+              <?php unset($_SESSION['Admin_Username']) ?>
+              alert("Logged out successfully");
+            }
+          </script>
+
         </ul>
 
 
@@ -86,7 +94,7 @@
       $Book_Genres = $_POST['Book_Genres'];
       $Book_Price = $_POST['Book_Price'];
       $Book_Type = $_POST['Book_Type'];
-      
+
 
       // SQL query to add data to table
       $sql = "INSERT INTO books (Book_title, Book_description, Book_price, book_type, Book_genre)

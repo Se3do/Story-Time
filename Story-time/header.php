@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,7 +42,13 @@
         </div>
       </div>
       <div id="login-cart">
-      <a href="final lo.php" id="login">Login</a>
+      <?php 
+      if(isset($_SESSION['Customer_Mail'])){
+        
+      }else{
+        echo '<a href="final lo.php" id="login">Login</a>';
+      }
+      ?>
         <a href="cart.php" id="cart-link"><img id="shopping-cart" src="images/shopping-cart-white.png" alt="Cart"></a>
       </div>
     </div>
